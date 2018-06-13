@@ -20,12 +20,13 @@ section {
 h2.food-name {
   width: 30%;
   text-align: center;
-  margin: 0px 0px 0.75em auto; /*right align*/
+  margin: 0px 0px 0px auto; /*right align*/
   border-color: black;
   border-left: 1px solid;
   border-bottom: 1px solid;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 0px 2px 0px;
   font-size: 125%;
+  overflow: hidden;
 }
 
 #chicken {
@@ -47,7 +48,7 @@ p {
   /*height: 235px;
   overflow: hidden;*/
   color: black;
-  margin-bottom: 1.5em;
+  margin: 0.75em 0px 1.5em 0px;
   padding: 0em 1.5em 0em 1.5em;
 }
 
@@ -151,7 +152,7 @@ p {
   .col-xm-1, .col-xm-2, .col-xm-3, .col-xm-4, .col-xm-5, .col-xm-6, .col-xm-7, .col-xm-8, .col-xm-9, .col-xm-10, .col-xm-11, .col-xm-12 {
     float: left;
     margin-bottom: 1em;
-    padding: 0px 9% 0px 9%; 
+    padding: 0px 5% 0px 5%; 
   }
   .col-xm-1 {
     width: 8.33%;
