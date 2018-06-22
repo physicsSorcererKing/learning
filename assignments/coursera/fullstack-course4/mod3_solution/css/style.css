@@ -5,14 +5,14 @@ nav.navbar {
 h1.navbar-brand {
 	font-size: 2em;
 }
-.navbar-toggler, .navbar-collapse div {
-	-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+.navbar-toggler, .navbar-collapse li {
+	-webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
 	background-color: white;
 }
-.navbar-collapse div:hover {
+.navbar-collapse li:hover {
 	background-color: #fff;
 }
 .navbar-collapse a {
@@ -32,6 +32,21 @@ h2.subtitle {
 	Here is one problem I don't get it:
 	Why using "border-top: 0;" will fail the layout like a glitch?
 	Anyway I replaced it by "margin-top: -1px;"*/
+	padding: 0;
+}
+#navbarSupportedContent * {
+	margin: 0;
+	padding: 0;
+}
+#navbarSupportedContent li {
+	padding: 0.55em 0;
+}
+#navbarSupportedContent h4 {
+	padding: 0.45em 0;
+}
+#navbarSupportedContent hr {
+	width: 96%;
+	margin: 0 auto;
 }
 .my-container {
 	width: 100%;
