@@ -14,18 +14,18 @@ main, footer{
 	text-align: center;
 }
 main {
-	padding-top: 88px;
+	padding-top: 78px;
 }
 
 @media (min-width: 576px) {
 	main {
-		padding-top: 100px;
+		padding-top: 88px;
 	}
 }
 
 @media (min-width: 992px) {
 	main {
-		padding-top: 120px;
+		padding-top: 108px;
 	}
 }
 
@@ -131,14 +131,20 @@ main {
 /*==================Main==================*/
 
 section {
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	margin: 1.5em 0;
+}
+section .section-title {
 	width: 100%;
 }
 section#show-video > #video {
 	margin: 1em auto;
 	width: 72vw;
 	height: 40.5vw;
+	border: 0;
 }
 section > form{
 	display: flex;
@@ -163,7 +169,5 @@ form input#email {
 }
 
 @media (min-width: 992px) {
-	section#show-video > #video {
-		
-	}
+
 }
