@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 id="title">This is a Survey</h1>
+	</header>
+	<main>
+		<p id="description">All you have to do is fill the following:</p>
+		<form action="/get" id="survey-form">
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="name-label" for="name">* Name:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<input type="text" id="name" name="name" placeholder="Type your name" required>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="email-label" for="email">* Email:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<input type="email" id="email" name="email" placeholder="Type your email" required>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="number-label" for="number">* Age:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<input type="number" id="number" name="age" placeholder="0-123" min="0" max="123" required>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="radio-label" for="radio">Degree:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<select id="dropdown" name="degree">
+							<option disabled value>Select one option</option>
+							<option value="0">No degree</option>
+							<option value="1">Bachelor's degree</option>
+							<option value="2">Master's degree</option>
+							<option value="3">Doctorate or above</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="radio-label">Annual salary:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<label>
+							<input type="radio" name="salary" value="0"><span>0 - 20K</span>
+						</label>
+						<label>
+							<input type="radio" name="salary" value="1"><span>21K - 50K</span>
+						</label>
+						<label>
+							<input type="radio" name="salary" value="2"><span>51K - 100K</span>
+						</label>
+						<label>
+							<input type="radio" name="salary" value="3"><span>101K - 200K</span>
+						</label>
+						<label>
+							<input type="radio" name="salary" value="4"><span>201K or above</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="checkbox-label">Working time:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<label>
+							<input type="checkbox" name="working-time" value="0"><span>01:00 - 05:00</span>
+						</label>
+						<label>
+							<input type="checkbox" name="working-time" value="1"><span>05:00 - 09:00</span>
+						</label>
+						<label>
+							<input type="checkbox" name="working-time" value="2"><span>09:00 - 13:00</span>
+						</label>
+						<label>
+							<input type="checkbox" name="working-time" value="3"><span>13:00 - 17:00</span>
+						</label>
+						<label>
+							<input type="checkbox" name="working-time" value="4"><span>17:00 - 21:00</span>
+						</label>
+						<label>
+							<input type="checkbox" name="working-time" value="5"><span>21:00 - 01:00</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="rows">
+				<div class="questions">
+					<div class="cells">
+						<label id="complain-label" for="complain">Complain:</label>
+					</div>
+				</div>
+				<div class="answers">
+					<div class="cells">
+						<textarea id="complain" name="complain" rows="4" placeholder="Let's talk shit!"></textarea>
+					</div>
+				</div>
+			</div>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
