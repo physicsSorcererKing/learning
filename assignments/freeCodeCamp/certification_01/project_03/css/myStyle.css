@@ -38,6 +38,9 @@ main {
 	background-color: white;*/
 	background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
 }
+#header h1{
+	display: none;
+}
 #nav-bar {
 	margin: 0;
 	padding: 0;
